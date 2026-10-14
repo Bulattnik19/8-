@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8 Марта - Магазин диванов | Каталог</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <header>
+        <div class="top-bar">
+            🎁 Скидка 15% на все диваны до 8 марта! Бесплатная доставка по Москве
+        </div>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-couch"></i>
+                <h1>8 МАРТА <span>| Диваны и кресла</span></h1>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="catalog.html" class="active">Каталог</a></li>
+                    <li><a href="delivery.html">Доставка</a></li>
+                    <li><a href="about.html">О компании</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="#" class="cart-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">3</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Контент -->
+    <main class="container">
+        <div class="breadcrumbs">
+            <a href="index.html">Главная</a> <span>></span> <span>Каталог диванов</span>
+        </div>
+
+        <div class="page-header">
+            <h1>Каталог диванов</h1>
+            <p>Выберите идеальный диван для вашего дома из нашей коллекции</p>
+        </div>
+
+        <!-- Фильтры -->
+        <div class="filters" style="
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            margin-bottom: 2rem;
+        ">
+            <div style="display: flex; flex-wrap: wrap; gap: 1rem; align-items: center;">
+                <span style="font-weight: 600;">Фильтры:</span>
+                <select style="padding: 0.5rem; border-radius: 8px; border: 1px solid var(--primary-pink);">
+                    <option>Все категории</option>
+                    <option>Угловые диваны</option>
+                    <option>Прямые диваны</option>
+                    <option>Диваны-кровати</option>
+                    <option>Кресла</option>
+                </select>
+                <select style="padding: 0.5rem; border-radius: 8px; border: 1px solid var(--primary-pink);">
+                    <option>Любая цена</option>
+                    <option>до 30 000 ₽</option>
+                    <option>30 000 - 50 000 ₽</option>
+                    <option>от 50 000 ₽</option>
+                </select>
+                <select style="padding: 0.5rem; border-radius: 8px; border: 1px solid var(--primary-pink);">
+                    <option>Любой цвет</option>
+                    <option>Светлые</option>
+                    <option>Темные</option>
+                    <option>Цветные</option>
+                </select>
+                <button class="btn btn-secondary" style="margin-left: auto;">Сбросить фильтры</button>
+            </div>
+        </div>
+
+        <!-- Каталог -->
+        <div class="products-grid">
+            <!-- Товары будут загружены через JavaScript -->
+        </div>
+
+        <!-- Пагинация -->
+        <div class="pagination" style="
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            margin: 3rem 0;
+        ">
+            <button class="btn btn-secondary">← Назад</button>
+            <button class="btn btn-primary">1</button>
+            <button class="btn btn-secondary">2</button>
+            <button class="btn btn-secondary">3</button>
+            <button class="btn btn-secondary">4</button>
+            <button class="btn btn-secondary">Вперед →</button>
+        </div>
+    </main>
+
+    <!-- Подвал -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Магазин "8 Марта"</h3>
+                    <p>Создаем уют в вашем доме с 2010 года. Специализируемся на производстве и продаже комфортной мебели.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Категории</h3>
+                    <ul>
+                        <li><a href="catalog.html">Угловые диваны</a></li>
+                        <li><a href="catalog.html">Прямые диваны</a></li>
+                        <li><a href="catalog.html">Диваны-кровати</a></li>
+                        <li><a href="catalog.html">Кресла и пуфы</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Контакты</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Москва, ул. Цветочная, 8</li>
+                        <li><i class="fas fa-phone"></i> +7 (495) 123-45-67</li>
+                        <li><i class="fas fa-envelope"></i> info@8marta-sofa.ru</li>
+                        <li><i class="fas fa-clock"></i> Ежедневно 9:00 - 21:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Магазин диванов "8 Марта". Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Загрузка товаров для каталога
+        document.addEventListener('DOMContentLoaded', function() {
+            const products = [
+                {
+                    id: 1,
+                    name: 'Диван "Мимоза"',
+                    description: 'Угловой диван с ортопедическим матрасом, цвет розовое золото',
+                    price: '34 990 ₽',
+                    oldPrice: '39 990 ₽',
+                    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+                    category: 'Угловые'
+                },
+                {
+                    id: 2,
+                    name: 'Диван "Тюльпан"',
+                    description: 'Прямой диван-кровать с механизмом "еврокнижка", бежевый',
+                    price: '28 500 ₽',
+                    oldPrice: '32 000 ₽',
+                    image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+                    category: 'Прямые'
+                },
+                {
+                    id: 3,
+                    name: 'Диван "Нарцисс"',
+                    description: 'Модульный диван с регулируемыми секциями, серый цвет',
+                    price: '42 750 ₽',
+                    oldPrice: '48 000 ₽',
+                    image: 'https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+                    category: 'Модульные'
+                },
+                {
+                    id: 4,
+                    name: 'Диван "Фиалка"',
+                    description: 'Кожаный диван для гостиной, прямой, темно-синий',
+                    price: '56 300 ₽',
+                    image: 'https://images.unsplash.com/photo-1540574163026-643ea20ade25?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+                    category: 'Кожаные'
+                },
+                {
+                    id: 5,
+                    name: 'Диван "Ромашка"',
+                    description: 'Компактный диван для маленькой гостиной, нежно-розовый',
+                    price: '24 800 ₽',
+                    oldPrice: '27 500 ₽',
+                    image: 'https://images.unsplash.com/photo-1519947486511-46149fa0a254?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+                    category: 'Прямые'
+                },
+                {
+                    id: 6,
+                    name: 'Кресло "Ландыш"',
+                    description: 'Кресло-мешок для отдыха, сменные чехлы',
+                    price: '8 900 ₽',
+                    image: 'https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+                    category: 'Кресла'
+                }
+            ];
+
+            const grid = document.querySelector('.products-grid');
+            
+            products.forEach(product => {
+                const card = document.createElement('div');
+                card.className = 'product-card fade-in';
+                card.innerHTML = `
+                    <img src="${product.image}" alt="${product.name}" class="product-image">
+                    <div class="product-info">
+                        <span style="
+                            display: inline-block;
+                            background: var(--accent-pink);
+                            color: var(--text-dark);
+                            padding: 0.2rem 0.8rem;
+                            border-radius: 20px;
+                            font-size: 0.8rem;
+                            margin-bottom: 0.5rem;
+                        ">${product.category}</span>
+                        <h3 class="product-title">${product.name}</h3>
+                        <p class="product-description">${product.description}</p>
+                        <div class="product-price">
+                            ${product.oldPrice ? `<span class="product-old-price">${product.oldPrice}</span>` : ''}
+                            ${product.price}
+                        </div>
+                        <button class="add-to-cart">В корзину</button>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        });
+    </script>
+</body>
+</html>

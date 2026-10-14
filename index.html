@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8 Марта - Магазин диванов | Главная</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <header>
+        <div class="top-bar">
+            🎁 Скидка 15% на все диваны до 8 марта! Бесплатная доставка по Москве
+        </div>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-couch"></i>
+                <h1>8 МАРТА <span>| Диваны и кресла</span></h1>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Главная</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="delivery.html">Доставка</a></li>
+                    <li><a href="about.html">О компании</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="#" class="cart-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">3</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Контент -->
+    <main class="container">
+        <!-- Герой секция -->
+        <section class="hero fade-in" style="
+            background: linear-gradient(rgba(255, 235, 238, 0.9), rgba(225, 190, 231, 0.9)), url('https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            padding: 5rem;
+            text-align: center;
+            border-radius: var(--radius);
+            margin: 2rem 0;
+        ">
+            <h2 style="font-size: 3rem; margin-bottom: 1rem; color: var(--text-dark);">Подарите уют к 8 Марта!</h2>
+            <p style="font-size: 1.3rem; max-width: 700px; margin: 0 auto 2rem; color: var(--text-light);">
+                Самые комфортные диваны и кресла для создания праздничной атмосферы в вашем доме. 
+                Специальные предложения к Международному женскому дню.
+            </p>
+            <a href="catalog.html" class="btn btn-primary">Выбрать диван</a>
+        </section>
+
+        <!-- Преимущества -->
+        <section class="main-content">
+            <div class="page-header">
+                <h1>Почему выбирают нас</h1>
+            </div>
+            
+            <div class="benefits-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+                <div class="benefit-card" style="
+                    background: var(--white);
+                    padding: 2rem;
+                    border-radius: var(--radius);
+                    box-shadow: var(--shadow);
+                    text-align: center;
+                    transition: var(--transition);
+                ">
+                    <i class="fas fa-truck" style="font-size: 2.5rem; color: var(--dark-pink); margin-bottom: 1rem;"></i>
+                    <h3 style="margin-bottom: 1rem; color: var(--text-dark);">Бесплатная доставка</h3>
+                    <p style="color: var(--text-light);">Доставляем диваны бесплатно по Москве в течение 3 дней</p>
+                </div>
+                
+                <div class="benefit-card" style="
+                    background: var(--white);
+                    padding: 2rem;
+                    border-radius: var(--radius);
+                    box-shadow: var(--shadow);
+                    text-align: center;
+                    transition: var(--transition);
+                ">
+                    <i class="fas fa-gift" style="font-size: 2.5rem; color: var(--dark-pink); margin-bottom: 1rem;"></i>
+                    <h3 style="margin-bottom: 1rem; color: var(--text-dark);">Подарки к 8 марта</h3>
+                    <p style="color: var(--text-light);">Дарим подушки и пледы к каждому заказу в праздничный период</p>
+                </div>
+                
+                <div class="benefit-card" style="
+                    background: var(--white);
+                    padding: 2rem;
+                    border-radius: var(--radius);
+                    box-shadow: var(--shadow);
+                    text-align: center;
+                    transition: var(--transition);
+                ">
+                    <i class="fas fa-shield-alt" style="font-size: 2.5rem; color: var(--dark-pink); margin-bottom: 1rem;"></i>
+                    <h3 style="margin-bottom: 1rem; color: var(--text-dark);">Гарантия 5 лет</h3>
+                    <p style="color: var(--text-light);">Предоставляем расширенную гарантию на все наши диваны</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Популярные товары -->
+        <section class="main-content">
+            <div class="page-header">
+                <h1>Популярные диваны</h1>
+                <p>Самые востребованные модели наших клиентов</p>
+            </div>
+            
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Диван Мимоза" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Диван "Мимоза"</h3>
+                        <p class="product-description">Угловой диван с ортопедическим матрасом</p>
+                        <div class="product-price">34 990 ₽</div>
+                        <button class="add-to-cart">В корзину</button>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Диван Тюльпан" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Диван "Тюльпан"</h3>
+                        <p class="product-description">Прямой диван-кровать с механизмом "еврокнижка"</p>
+                        <div class="product-price">28 500 ₽</div>
+                        <button class="add-to-cart">В корзину</button>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Диван Нарцисс" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Диван "Нарцисс"</h3>
+                        <p class="product-description">Модульный диван с регулируемыми секциями</p>
+                        <div class="product-price">42 750 ₽</div>
+                        <button class="add-to-cart">В корзину</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="catalog.html" class="btn btn-primary">Смотреть весь каталог</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Магазин "8 Марта"</h3>
+                    <p>Создаем уют в вашем доме с 2010 года. Специализируемся на производстве и продаже комфортной мебели.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Категории</h3>
+                    <ul>
+                        <li><a href="catalog.html">Угловые диваны</a></li>
+                        <li><a href="catalog.html">Прямые диваны</a></li>
+                        <li><a href="catalog.html">Диваны-кровати</a></li>
+                        <li><a href="catalog.html">Кресла и пуфы</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Контакты</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Москва, ул. Цветочная, 8</li>
+                        <li><i class="fas fa-phone"></i> +7 (495) 123-45-67</li>
+                        <li><i class="fas fa-envelope"></i> info@8marta-sofa.ru</li>
+                        <li><i class="fas fa-clock"></i> Ежедневно 9:00 - 21:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Магазин диванов "8 Марта". Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
